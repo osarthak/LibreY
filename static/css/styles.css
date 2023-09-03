@@ -28,6 +28,15 @@ a,
     text-decoration: none;
 }
 
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .text-result-wrapper a:visited h2,
 .special-result-container a,
 .did-you-mean a,
@@ -57,14 +66,14 @@ a:hover,
 
 .search-container input,
 .sub-search-container input {
-    width: 500px;
+    width: 550px;
     color: var(--search-container-text-color);
     background-color: var(--search-container-background-color);
-    padding: 10px;
+    padding: 15px;
     font-size: inherit;
     font-family: sans-serif;
     border: 1px solid var(--search-container-background-border);
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .search-button-wrapper button,
@@ -536,6 +545,12 @@ hr.small-line {
     .next-page-button-wrapper,
     .did-you-mean {
         margin-left: 20px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 40%;
+        width: 100%;
     }
 
    /* dontate css start*/
