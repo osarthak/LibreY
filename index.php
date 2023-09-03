@@ -3,7 +3,7 @@
     <title>LibreY</title>
     </head>
     <body>
-        <form class="search-container centered" action="search.php" method="get" autocomplete="off">
+        <form class="search-container centered" action="search.php" method="get" autocomplete="off" placeholder="Search Privately">
                 <h1>Libre<span class="Y">Y</span></h1>
                 <input type="text" name="q" autofocus/>
                 <input type="hidden" name="p" value="0"/>

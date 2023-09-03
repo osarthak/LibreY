@@ -57,11 +57,11 @@ a:hover,
 
 .search-container {
     text-align: center;
-    margin-top: 10%;
 }
 
 .search-container h1 {
     font-size: 70px;
+    margin-top: 0;
 }
 
 .search-container input,
