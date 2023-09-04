@@ -79,7 +79,7 @@ a:hover,
     width: 550px;
     color: var(--search-container-text-color);
     background-color: var(--search-container-background-color);
-    padding: 13px;
+    padding: 12px;
     font-size: inherit;
     font-family: sans-serif;
     border: 1px solid var(--search-container-background-border);
@@ -457,7 +457,7 @@ hr.small-line {
     }
 
     .footer-container a {
-        margin: 10px;
+        margin-right: 20px;
     }
 
     .sub-search-container {
