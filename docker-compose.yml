@@ -1,7 +1,7 @@
 version: "3"
 services:
   librey:
-    image: ghcr.io/ahwxorg/librey:latest
+    image: librey:librey:latest
     container_name: librey
     network_mode: bridge
     ports:
