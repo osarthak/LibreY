@@ -33,10 +33,10 @@
 
         "frontends" => array(
             "invidious" => array(
-                "instance_url" => "",
+                "instance_url" => "https://yt.artemislena.eu",
                 "project_url" => "https://docs.invidious.io/instances/",
                 "original_name" => "YouTube",
-                "original_url" => " https://yt.artemislena.eu"
+                "original_url" => "youtube.com"
             ),
             "rimgo" => array(
                 "instance_url" => "",
@@ -57,17 +57,17 @@
                 "original_url" => "github.com"
             ),
             "nitter" => array(
-                "instance_url" => "",
+                "instance_url" => "https://nitter.fdn.fr",
                 "project_url" => "https://github.com/zedeus/nitter/wiki/Instances",
                 "original_name" => "Twitter",
-                "original_url" => "https://nitter.fdn.fr"
+                "original_url" => "twitter.com"
             ),
 
             "libreddit" => array(
-                "instance_url" => "",
+                "instance_url" => "https://safereddit.com",
                 "project_url" => "https://github.com/libreddit/libreddit-instances/blob/master/instances.md",
                 "original_name" => "Reddit",
-                "original_url" => "https://safereddit.com"
+                "original_url" => "reddit.com"
             ),
             "proxitok" => array(
                 "instance_url" => "",
