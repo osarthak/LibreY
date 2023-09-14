@@ -36,7 +36,7 @@
                 "instance_url" => "",
                 "project_url" => "https://docs.invidious.io/instances/",
                 "original_name" => "YouTube",
-                "original_url" => "youtube.com"
+                "original_url" => " https://yt.artemislena.eu"
             ),
             "rimgo" => array(
                 "instance_url" => "",
@@ -60,14 +60,14 @@
                 "instance_url" => "",
                 "project_url" => "https://github.com/zedeus/nitter/wiki/Instances",
                 "original_name" => "Twitter",
-                "original_url" => "twitter.com"
+                "original_url" => "https://nitter.fdn.fr"
             ),
 
             "libreddit" => array(
                 "instance_url" => "",
                 "project_url" => "https://github.com/libreddit/libreddit-instances/blob/master/instances.md",
                 "original_name" => "Reddit",
-                "original_url" => "reddit.com"
+                "original_url" => "https://safereddit.com"
             ),
             "proxitok" => array(
                 "instance_url" => "",
@@ -91,7 +91,7 @@
                 "instance_url" => "",
                 "project_url" => "https://github.com/zyachel/libremdb#instances",
                 "original_name" => "IMDb",
-                "original_url" => "imdb.com"
+                "original_url" => "https://lmdb.hostux.net"
             ),
             "breezewiki" => array(
                 "instance_url" => "",
@@ -124,8 +124,8 @@
 
             /* replace with "text" => "duckduckgo" to use duckduckgo instead
             * (recommended if being ratelimited */
-            "text" => "google"
-            // "text" => "duckduckgo"
+            //"text" => "google"
+             "text" => "duckduckgo"
         ),
 
 
