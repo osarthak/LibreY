@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     require "misc/tools.php";
     require "misc/search_engine.php";
 
@@ -20,4 +20,4 @@
     $results = fetch_search_results($opts, false);
     header("Content-Type: application/json");
     echo json_encode($results);
-?>
+?> -->
