@@ -7,10 +7,10 @@
     <a href="./donate.php">Donate ❤️</a>
 </div>
 <div class="git-container hide">
-    <?php
-        $hash = file_get_contents(".git/refs/heads/main");
-        echo "<a href=\"https://github.com/Ahwxorg/librey/commit/$hash\" target=\"_blank\">Latest commit: $hash</a>";
-    ?>
+    <!-- <?php
+        // $hash = file_get_contents(".git/refs/heads/main");
+        // echo "<a href=\"https://github.com/Ahwxorg/librey/commit/$hash\" target=\"_blank\">Latest commit: $hash</a>";
+    ?> -->
 </div>
 </body>
 </html>
