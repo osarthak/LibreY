@@ -43,7 +43,7 @@
                 <label for="theme"><?php printtext("settings_theme");?>:</label>
                 <select name="theme">
                 <?php
-                    $themes = "<option value=\"dark\">Dark</option>
+                    $themes = "<option value=\"amoled\">AMOLED</option>
                     <option value=\"darker\">Darker</option>
                     <option value=\"amoled\">AMOLED</option>
                     <option value=\"light\">Light</option>
@@ -58,7 +58,7 @@
                     <option value=\"github_night\">GitHub Night</option>
                     <option value=\"catppuccin\">Catppucin</option>
                     <option value=\"ubuntu\">Ubuntu</option>
-                    <option value=\"tokyo_night\">Tokyo night</option>";
+                    <option value=\"tokyo_night\">Tokyo Night</option>";
 
                     if (isset($opts->theme)) {
                         $theme = $opts->theme;
