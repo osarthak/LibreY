@@ -76,7 +76,7 @@
         $opts->type = (int) ($_REQUEST["t"] ?? 0);
         $opts->page = (int) ($_REQUEST["p"] ?? 0);
 
-        $opts->theme = $_REQUEST["theme"] ?? trim(htmlspecialchars($_COOKIE["theme"] ?? "dark"));
+        $opts->theme = $_REQUEST["theme"] ?? trim(htmlspecialchars($_COOKIE["theme"] ?? "amoled"));
 
         $opts->safe_search = (int) ($_REQUEST["safe"] ?? 0) == 1 || isset($_COOKIE["safe_search"]);
 
