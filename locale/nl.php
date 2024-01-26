@@ -13,7 +13,7 @@ return array(
 
     "latest_commit" => "Laatste commit: %s",
 
-    "category_general" => "Algemeem",
+    "category_general" => "Algemeen",
     "category_images" => "Foto's",
     "category_videos" => "Videos",
     "category_torrents" => "Torrents",
