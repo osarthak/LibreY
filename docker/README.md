@@ -2,8 +2,8 @@
 
 - [Introduction](#introduction)
   - [Running a Docker container](#running-a-docker-container)
-  - [Running a Docker container through ghcr](#running-a-docker-container-through-ghcr)
-  - [Running a Docker container with Docker Compose](#running-a-docker-container-with-compose)
+  - [Running a Docker container with Docker Compose](#running-a-docker-container-with-docker-compose)
+  - [Running a Docker container with the Docker CLI (not recommended)](#running-a-docker-container-with-the-docker-cli-not-recommended)
   - [Environment variables that can be set in the Docker container](#environment-variables-that-can-be-set-in-the-docker-container)
     - [Search Configuration](#search)
     - [Frontend Configuration](#frontends)
