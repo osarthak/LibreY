@@ -41,6 +41,77 @@ Support the community. ❤️<br><br>
 [I2P](http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/instances.php)<br>
 <br>
 
+### How to host LibreY
+
+To host LibreY using Docker, you can follow the instructions in the [Docker directory](https://github.com/Ahwxorg/LibreY/tree/main/docker).
+
+To host LibreY using your OS's native package manager and PHP+NGINX, you can follow the following steps:
+
+These instructions are for Debian GNU/Linux but it should be similar on all GNU/Linux distros (alter the `apt` commands and `systemctl` commands to suit your distros native package management and init service.) and \*BSD systems.
+
+Install the packages
+
+```sh
+sudo apt install php php-fpm php-dom php-curl php-apcu nginx git
+```
+
+Clone LibreY
+
+```sh
+git clone https://github.com/Ahwxorg/LibreY.git
+```
+
+Rename the config and opensearch file
+
+```sh
+cd librey
+mv config.php.example config.php
+mv opensearch.xml.example opensearch.xml
+```
+
+Change opensearch.xml to point to your domain
+
+```sh
+sed -i 's/http:\/\/localhost:80/https:\/\/your.domain/g' opensearch.xml
+```
+
+Example nginx config
+
+```sh
+server {
+        listen 80;
+
+        server_name your.domain;
+
+        root /var/www/html/LibreY;
+        index index.php;
+
+        location ~ \.php$ {
+               include snippets/fastcgi-php.conf;
+               fastcgi_pass unix:/run/php/php-fpm.sock;
+        }
+}
+```
+
+You could also remove the php extension, which is optional. Add this code inside the `server {}` block.
+
+```sh
+location / {
+       try_files $uri $uri/ @extensionless-php;
+}
+
+location @extensionless-php {
+       rewrite ^(.*)$ $1.php last;
+}
+```
+
+Start php-fpm and nginx
+
+```sh
+sudo systemctl enable --now php-fpm nginx
+```
+
+Now LibreY should be running!
 
 ### About LibreY
 
@@ -49,8 +120,8 @@ LibreY gives you text results from Google, DuckDuckGo, Brave Search, Ecosia, Yan
 
 ### LibreY compared to other metasearch engines
 
-| Name |  Works without JS | Privacy frontend redirect | Torrent results | API | No 3rd party libs used |
-|-|-|-|-|-|-|
-| LibreY | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SearXNG | ❓ Not user friendly | ❓ Only host can set it | ✅ | ✅ | ❌ |
-| Whoogle | ✅ | ❓ Only host can set it | ❌ | ❌ | ❌ |
+| Name    | Works without JS     | Privacy frontend redirect | Torrent results | API | No 3rd party libs used |
+| ------- | -------------------- | ------------------------- | --------------- | --- | ---------------------- |
+| LibreY  | ✅                   | ✅                        | ✅              | ✅  | ✅                     |
+| SearXNG | ❓ Not user friendly | ❓ Only host can set it   | ✅              | ✅  | ❌                     |
+| Whoogle | ✅                   | ❓ Only host can set it   | ❌              | ❌  | ❌                     |
