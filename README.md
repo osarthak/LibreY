@@ -55,6 +55,11 @@ Install the packages (Debian GNU/Linux):
 sudo apt install php php-fpm php-dom php-curl php-apcu nginx git
 ```
 
+Install the packages (Arch Linux):
+```sh
+sudo pacman -S php php-fpm php-apcu nginx git
+```
+
 Clone LibreY:
 
 ```sh
