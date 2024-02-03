@@ -45,37 +45,43 @@ Support the community. ❤️<br><br>
 
 To host LibreY using Docker, you can follow the instructions in the [Docker directory](https://github.com/Ahwxorg/LibreY/tree/main/docker).
 
-To host LibreY using your OS's native package manager and PHP+NGINX, you can follow the following steps:
+To host LibreY using your OS's native package manager and PHP+NGINX, you can use the following steps as a guide.
 
-These instructions are for Debian GNU/Linux but it should be similar on all GNU/Linux distros (alter the `apt` commands and `systemctl` commands to suit your distros native package management and init service.) and \*BSD systems.
+These instructions are specific to Debian GNU/Linux but should be similar on most *nix variants (differences may include commands for package management, init system, php-fpm.sock location and availability of fastcgi-php.conf)
 
-Install the packages
+Install the packages (Debian GNU/Linux):
 
 ```sh
 sudo apt install php php-fpm php-dom php-curl php-apcu nginx git
 ```
 
-Clone LibreY
-
+Install the packages (Arch Linux):
 ```sh
-git clone https://github.com/Ahwxorg/LibreY.git
+sudo pacman -S php php-fpm php-apcu nginx git
 ```
 
-Rename the config and opensearch file
+Clone LibreY:
 
 ```sh
-cd librey
+mkdir -p /var/www/html
+git clone https://github.com/Ahwxorg/LibreY.git /var/www/html/LibreY
+```
+
+Rename the config and opensearch files, edit manually if needed:
+
+```sh
+cd /var/www/html/LibreY/
 mv config.php.example config.php
 mv opensearch.xml.example opensearch.xml
 ```
 
-Change opensearch.xml to point to your domain
+Change opensearch.xml to point to your domain:
 
 ```sh
 sed -i 's/http:\/\/localhost:80/https:\/\/your.domain/g' opensearch.xml
 ```
 
-Example nginx config
+An nginx configuration similar to the one below should be placed in your `http { ... }` block or a file that is automatically detected as such.
 
 ```sh
 server {
@@ -93,7 +99,7 @@ server {
 }
 ```
 
-You could also remove the php extension, which is optional. Add this code inside the `server {}` block.
+You can optionally remove the .php extension in URLs by adding this code your `server { ... }` block.
 
 ```sh
 location / {
@@ -105,13 +111,13 @@ location @extensionless-php {
 }
 ```
 
-Start php-fpm and nginx
+Start php-fpm and nginx immediately and on every boot:
 
 ```sh
 sudo systemctl enable --now php-fpm nginx
 ```
 
-Now LibreY should be running!
+Now LibreY should be running at the port you specified!
 
 ### About LibreY
 
