@@ -43,7 +43,7 @@
       "librey": true
     },
     {
-      "clearnet": "https://search.milivojevic.in.rs/",
+      "clearnet": "https://librey.milivojevic.in.rs/",
       "tor": "http://a5zlmx66wvhhuwyy7i4zqqyasqqbivy5a24ynioyzkdnmvttvycr63ad.onion",
       "i2p": null,
       "country": "RS",
