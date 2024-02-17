@@ -139,13 +139,6 @@
       "i2p": null,
       "country": "US",
       "librey": true
-    },
-    {
-      "clearnet": "https://search.zeroish.xyz/",
-      "tor": null,
-      "i2p": null,
-      "country": "US",
-      "librey": true
     }
   ]
 }
