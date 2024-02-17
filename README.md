@@ -52,12 +52,12 @@ These instructions are specific to Debian GNU/Linux but should be similar on mos
 Install the packages (Debian GNU/Linux):
 
 ```sh
-sudo apt install php php-fpm php-dom php-curl php-apcu nginx git
+apt install php php-fpm php-dom php-curl php-apcu nginx git
 ```
 
 Install the packages (Arch Linux):
 ```sh
-sudo pacman -S php php-fpm php-apcu nginx git
+pacman -S php php-fpm php-apcu nginx git
 ```
 
 Clone LibreY:
@@ -81,7 +81,7 @@ Change opensearch.xml to point to your domain:
 sed -i 's/http:\/\/localhost:80/https:\/\/your.domain/g' opensearch.xml
 ```
 
-An nginx configuration similar to the one below should be placed in your `http { ... }` block or a file that is automatically detected as such.
+A nginx configuration similar to the one below should be placed in your `http { ... }` block or a file that is automatically detected as such.
 
 ```sh
 server {
@@ -114,7 +114,7 @@ location @extensionless-php {
 Start php-fpm and nginx immediately and on every boot:
 
 ```sh
-sudo systemctl enable --now php-fpm nginx
+systemctl enable --now php-fpm nginx
 ```
 
 Now LibreY should be running at the port you specified!
