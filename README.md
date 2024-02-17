@@ -81,7 +81,7 @@ Change opensearch.xml to point to your domain:
 sed -i 's/http:\/\/localhost:80/https:\/\/your.domain/g' opensearch.xml
 ```
 
-A nginx configuration similar to the one below should be placed in your `http { ... }` block or a file that is automatically detected as such.
+An nginx configuration similar to the one below should be placed in your `http { ... }` block or a file that is automatically detected as such.
 
 ```sh
 server {
