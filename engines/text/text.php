@@ -102,7 +102,7 @@
             $results = $this->engine_request->get_results();
 
             if (empty($results)) {
-                set_cooldown($this->engine, ($opts->request_cooldown ?? "1") * 60, $this->opts->cooldowns);
+                set_cooldown($this->engine, ($this->opts->request_cooldown ?? "1") * 60, $this->opts->cooldowns);
             } else {
                 if ($this->special_request) {
                     $special_result = $this->special_request->get_results();
