@@ -4,7 +4,7 @@
         protected $url, $query, $page, $opts, $mh, $ch;
 
         protected $DO_CACHING = true;
-        function __construct($opts, $mh) {
+        public function __construct($opts, $mh) {
             $this->query = $opts->query;
             $this->page = $opts->page;
             $this->mh = $mh;
