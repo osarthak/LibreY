@@ -1,7 +1,7 @@
 <?php
 
-    $config = require "config.php";
-    require "misc/tools.php";
+    $config = require_once "config.php";
+    require_once "misc/tools.php";
 
     $url = $_REQUEST["url"];
     $requested_root_domain = get_root_domain($url);

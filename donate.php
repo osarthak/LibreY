@@ -1,5 +1,5 @@
 <?php
-    require "misc/header.php";
+    require_once "misc/header.php";
 
     // Feel free to add your donation options here, but please don't remove mine.
 ?>
@@ -86,4 +86,4 @@
 
         
 
-<?php require "misc/footer.php"; ?>
+<?php require_once "misc/footer.php"; ?>

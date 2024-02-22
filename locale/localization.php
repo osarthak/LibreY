@@ -24,5 +24,5 @@ if (array_key_exists("HTTP_ACCEPT_LANGUAGE", $_SERVER)) {
     }
 }
 
-define("TEXTS", require "locale/$locale.php");
+define("TEXTS", require_once "locale/$locale.php");
 ?>

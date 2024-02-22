@@ -1,4 +1,4 @@
-<?php require "misc/header.php"; ?>
+<?php require_once "misc/header.php"; ?>
 
     <title>LibreY</title>
     </head>
@@ -15,4 +15,4 @@
                 </div>
         </form>
 
-<?php require "misc/footer.php"; ?>
+<?php require_once "misc/footer.php"; ?>

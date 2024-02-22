@@ -41,7 +41,7 @@
             if (is_null($this->engine_request))
                 return;
 
-            require "engines/special/special.php";
+            require_once "engines/special/special.php";
             $this->special_request = get_special_search_request($opts, $mh);
         }
         private function select_engine() {
@@ -59,32 +59,32 @@
 
         private function get_engine_request($engine, $opts, $mh) {
             if ($engine == "google") {
-                require "engines/text/google.php";
+                require_once "engines/text/google.php";
                 return new GoogleRequest($opts, $mh);
             }
 
             if ($engine == "duckduckgo") {
-                require "engines/text/duckduckgo.php";
+                require_once "engines/text/duckduckgo.php";
                 return new DuckDuckGoRequest($opts, $mh);
             }
 
             if ($engine == "brave") {
-                require "engines/text/brave.php";
+                require_once "engines/text/brave.php";
                 return new BraveSearchRequest($opts, $mh);
             }
 
             if ($engine == "yandex") {
-                require "engines/text/yandex.php";
+                require_once "engines/text/yandex.php";
                 return new YandexSearchRequest($opts, $mh);
             }
 
             if ($engine == "ecosia") {
-                require "engines/text/ecosia.php";
+                require_once "engines/text/ecosia.php";
                 return new EcosiaSearchRequest($opts, $mh);
             }
 
             if ($engine == "mojeek") {
-                require "engines/text/mojeek.php";
+                require_once "engines/text/mojeek.php";
                 return new MojeekSearchRequest($opts, $mh);
             }
 

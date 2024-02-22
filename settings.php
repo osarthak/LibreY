@@ -1,5 +1,5 @@
 <?php
-        require "misc/search_engine.php";
+        require_once "misc/search_engine.php";
 
         // Reset all cookies when resetting, or before saving new cookies
         if (isset($_REQUEST["reset"]) || isset($_REQUEST["save"])) {
@@ -30,7 +30,7 @@
 
         $opts = load_opts();
 
-        require "misc/header.php";
+        require_once "misc/header.php";
 ?>
 
     <title>LibreY - <?php printtext("settings_title");?></title>
@@ -100,7 +100,7 @@
                         <span><?php printtext("settings_preferred_engine");?></span>
                         <select name="engine">
                         <?php
-                           require "engines/text/text.php";
+                           require_once "engines/text/text.php";
 
                            $engines = get_engines();
 
@@ -158,4 +158,4 @@
             </form>
         </div>
 
-<?php require "misc/footer.php"; ?>
+<?php require_once "misc/footer.php"; ?>

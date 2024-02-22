@@ -1,5 +1,5 @@
 <?php
-    require "engines/text/text.php";
+    require_once "engines/text/text.php";
     class OSMRequest extends EngineRequest {
         public function get_request_url() {
 
