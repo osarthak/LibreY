@@ -62,7 +62,6 @@
 
             if (!empty($results)) {
                 $results["results_source"] = parse_url($instance)["host"];
-                error_log($results["results_source"]);
                 return $results;
             }
 
