@@ -86,4 +86,4 @@
 
         
 
-<?php require_once "misc/footer.php"; ?>
+<?php require "misc/footer.php"; ?>
