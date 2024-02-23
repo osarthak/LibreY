@@ -47,7 +47,7 @@
                     continue;
                 $title = $title->textContent;
 
-                $description = $xpath->evaluate(".//div[contains(@class, 'snippet-content')]//div[contains(@class, 'snippet-description')]", $result)[0]->textContent;
+                $description = ($xpath->evaluate(".//div[contains(@class, 'snippet-content')]//div[contains(@class, 'snippet-description')]", $result)[0] ?? null) ?->textContent ?? '';
 
                 array_push($results,
                     array (
