@@ -1,4 +1,4 @@
-<?php require "locale/localization.php"; ?>
+<?php require_once "locale/localization.php"; ?>
 <!DOCTYPE html >
 <html lang="en">
     <head>

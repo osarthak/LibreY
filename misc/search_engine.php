@@ -1,5 +1,5 @@
 <?php
-    require "misc/cooldowns.php";
+    require_once "misc/cooldowns.php";
     abstract class EngineRequest {
         protected $url, $query, $page, $opts, $mh, $ch;
 
@@ -60,7 +60,7 @@
     }
 
     function load_opts() {
-        $opts = require "config.php";
+        $opts = require_once "config.php";
 
         # account for the old, misspelled options
         if (isset($opts->disable_bittorent_search))
@@ -123,11 +123,11 @@
         switch ($opts->type)
         {
             case 1:
-                require "engines/qwant/image.php";
+                require_once "engines/qwant/image.php";
                 return new QwantImageSearch($opts, $mh);
 
             case 2:
-                require "engines/invidious/video.php";
+                require_once "engines/invidious/video.php";
                 return new VideoSearch($opts, $mh);
 
             case 3:
@@ -136,7 +136,7 @@
                     break;
                 }
 
-                require "engines/bittorrent/merge.php";
+                require_once "engines/bittorrent/merge.php";
                 return new TorrentSearch($opts, $mh);
 
             case 4:
@@ -144,15 +144,15 @@
                     echo "<p class=\"text-result-container\">" . TEXTS["feature_disabled"] . "</p>";
                     break;
                 }
-                require "engines/ahmia/hidden_service.php";
+                require_once "engines/ahmia/hidden_service.php";
                 return new TorSearch($opts, $mh);
 
             case 5:
-                require "engines/maps/openstreetmap.php";
+                require_once "engines/maps/openstreetmap.php";
                 return new OSMRequest($opts, $mh);
 
             default:
-                require "engines/text/text.php";
+                require_once "engines/text/text.php";
                 return new TextSearch($opts, $mh);
         }
     }
@@ -173,7 +173,7 @@
         $results = $search_category->get_results();
 
         if (empty($results)) {
-            require "engines/librex/fallback.php";
+            require_once "engines/librex/fallback.php";
             $results = get_librex_results($opts);
         }
 

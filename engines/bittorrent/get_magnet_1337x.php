@@ -1,6 +1,6 @@
 <?php
-    require "../../misc/tools.php";
-    $config = require "../../config.php";
+    require_once "../../misc/tools.php";
+    $config = require_once "../../config.php";
 
     $url = $_REQUEST["url"];
 

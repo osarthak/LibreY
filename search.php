@@ -1,8 +1,8 @@
 <?php
-    require "misc/header.php";
+    require_once "misc/header.php";
 
-    require "misc/tools.php";
-    require "misc/search_engine.php";
+    require_once "misc/tools.php";
+    require_once "misc/search_engine.php";
 
     $opts = load_opts();
 
@@ -76,4 +76,4 @@
             print_page_buttons($opts->type, $opts->query, $opts->page);
         ?>
 
-<?php require "misc/footer.php"; ?>
+<?php require_once "misc/footer.php"; ?>
