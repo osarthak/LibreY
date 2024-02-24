@@ -21,7 +21,7 @@
           </div>
 
           <img
-            src="/static/images/btc.png"
+            src="static/images/btc.png"
             height="160"
             width="160"
             alt="btc qr code"
@@ -35,7 +35,7 @@
             </p>
           </div>
           <img
-            src="/static/images/xmr.png"
+            src="static/images/xmr.png"
             height="160"
             width="160"
             alt="xmr qr code (hnhx)"
@@ -57,7 +57,7 @@
               </p>
           </div>
           <img
-            src="/static/images/xmr-ahwx.png"
+            src="static/images/xmr-ahwx.png"
             height="160"
             width="160"
             alt="xmr qr code (ahwx)"
@@ -67,7 +67,7 @@
         <div class="flex-row">
           <a href="https://ko-fi.com/Ahwxorg" target="_blank"
             ><img
-              src="/static/images/kofi.png"
+              src="static/images/kofi.png"
               alt="kifi img"
               height="50"
               width="auto"
@@ -75,7 +75,7 @@
 
           <a href="https://www.buymeacoffee.com/ahwx" target="_blank">
             <img
-              src="/static/images/buy-me-a-coffee.png"
+              src="static/images/buy-me-a-coffee.png"
               height="50"
               width="auto"
               alt="buy-me-a-coffee img"

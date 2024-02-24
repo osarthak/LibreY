@@ -7,7 +7,7 @@ function printtext($key) {
 function printftext() {
     $argv = func_get_args();
     $key = array_shift($argv);
-    vprintf(TEXTS[$key], $argv);
+    return vprintf(TEXTS[$key], $argv);
 }
 
 // default to language "en"

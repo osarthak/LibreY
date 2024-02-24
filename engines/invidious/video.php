@@ -9,7 +9,7 @@
 
         public function parse_results($response) {
             $results = array();
-            $json_response = json_decode($response, true);
+            $json_response = json_decode($response, true) ?? [];
 
             foreach ($json_response as $response) {
                 if ($response["type"] == "video") {
@@ -41,26 +41,27 @@
         public static function print_results($results, $opts) {
             echo "<div class=\"text-result-container\">";
 
-                foreach($results as $result) {
-                    $title = $result["title"];
-                    $url = $result["url"];
-                    $url = check_for_privacy_frontend($url, $opts);
-                    $base_url = get_base_url($url);
-                    $uploader = $result["uploader"];
-                    $views = $result["views"];
-                    $date = $result["date"];
-                    $thumbnail = $result["thumbnail"];
+            foreach ($results as $result) {
+                $title = $result["title"] ?? '';
+                $url = $result["url"] ?? '';
+                $url = check_for_privacy_frontend($url, $opts);
+                $base_url = get_base_url($url);
+                $uploader = $result["uploader"] ?? '';
+                $views = $result["views"] ?? '';
+                $date = $result["date"] ?? '';
+                $thumbnail = $result["thumbnail"] ?? '';
 
-                    echo "<div class=\"text-result-wrapper\">";
-                    echo "<a href=\"$url\">";
-                    echo "$base_url";
-                    echo "<h2>$title</h2>";
-                    echo "<img class=\"video-img\" src=\"image_proxy.php?url=$thumbnail\">";
-                    echo "<br>";
-                    echo "<span>$uploader - $date - $views views</span>";
-                    echo "</a>";
-                    echo "</div>";
-                }
+                echo "<div class=\"text-result-wrapper\">";
+                echo "<a href=\"$url\">";
+                echo "$base_url";
+                echo "<h2>$title</h2>";
+                echo "<img class=\"video-img\" src=\"image_proxy.php?url=$thumbnail\">";
+                echo "<br>";
+                echo "<span>$uploader - $date - $views views</span>";
+                echo "</a>";
+                echo "</div>";
+            }
+
 
             echo "</div>";
         }
