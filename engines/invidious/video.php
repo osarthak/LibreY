@@ -41,7 +41,8 @@
         public static function print_results($results, $opts) {
             echo "<div class=\"text-result-container\">";
 
-            foreach ($results as $result) {
+            foreach ($results as $key => $result) {
+                if ($key == "results_source") continue;
                 $title = $result["title"] ?? '';
                 $url = $result["url"] ?? '';
                 $url = check_for_privacy_frontend($url, $opts);
