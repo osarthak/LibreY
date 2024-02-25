@@ -9,9 +9,9 @@
 
         public function parse_results($response) {
             $results = array();
-            $json_response = json_decode($response, true) ?? [];
+            $json_response = json_decode($response, true);
 
-            foreach ($json_response as $response) {
+            foreach ($json_response ?: [] as $response) {
                 if ($response["type"] == "video") {
                     $title = $response["title"];
                     $url = "https://youtube.com/watch?v=" . $response["videoId"];
@@ -41,7 +41,8 @@
         public static function print_results($results, $opts) {
             echo "<div class=\"text-result-container\">";
 
-            foreach ($results as $result) {
+            foreach ($results as $key => $result) {
+                if ($key == "results_source") continue;
                 $title = $result["title"] ?? '';
                 $url = $result["url"] ?? '';
                 $url = check_for_privacy_frontend($url, $opts);
@@ -49,7 +50,7 @@
                 $uploader = $result["uploader"] ?? '';
                 $views = $result["views"] ?? '';
                 $date = $result["date"] ?? '';
-                $thumbnail = $result["thumbnail"] ?? '';
+                $thumbnail = preg_replace('/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^\s]+)/', 'https://i.ytimg.com/vi/$1/maxresdefault.jpg', $url) ?? '';
 
                 echo "<div class=\"text-result-wrapper\">";
                 echo "<a href=\"$url\">";
