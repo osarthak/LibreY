@@ -56,7 +56,10 @@
                     <option value=\"startpage\">Startpage Dark</option>
                     <option value=\"gruvbox\">Gruvbox</option>
                     <option value=\"github_night\">GitHub Night</option>
-                    <option value=\"catppuccin\">Catppucin</option>
+                    <option value=\"catppuccin_latte\">Catppuccin Latte</option>
+                    <option value=\"catppuccin_frappe\">Catppuccin Frappe</option>
+                    <option value=\"catppuccin_macchiato\">Catppuccin Macchiato</option>
+                    <option value=\"catppuccin_mocha\">Catppuccin Mocha</option>
                     <option value=\"ubuntu\">Ubuntu</option>
                     <option value=\"tokyo_night\">Tokyo Night</option>";
 
