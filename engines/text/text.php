@@ -4,7 +4,7 @@
     }
 
     class TextSearch extends EngineRequest {
-        protected $engine, $engine_request, $special_request;
+        protected $cache_key, $engine, $engines, $engine_request, $special_request;
         public function __construct($opts, $mh) {
             $this->engines = get_engines();
             shuffle($this->engines);
