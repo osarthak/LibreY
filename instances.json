@@ -15,6 +15,13 @@
       "librey": true
     },
     {
+      "clearnet": "https://search.revvy.de/",
+      "tor": "http://search.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/",
+      "i2p": null,
+      "country": "CL",
+      "librey": true
+    },
+    {
       "clearnet": "https://search.davidovski.xyz/",
       "tor": null,
       "i2p": null,
