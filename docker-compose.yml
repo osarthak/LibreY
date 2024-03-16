@@ -1,7 +1,8 @@
 version: "3"
 services:
   librey:
-    image: ghcr.io/ahwxorg/librey:latest
+#    image: ghcr.io/ahwxorg/librey:latest
+    build: .
     container_name: librey
     network_mode: bridge
     ports:
@@ -26,7 +27,7 @@ services:
       - ./nginx_logs:/var/log/nginx
       - ./php_logs:/var/log/php83
     restart: unless-stopped
-  watchtower: # Watchtower is not required but highly recommended, since Watchtower will re-pull and restart the LibreY container automatically whenever there's an update.
-    image: containrrr/watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+#  watchtower: # Watchtower is not required but highly recommended, since Watchtower will re-pull and restart the LibreY container automatically whenever there's an update.
+#    image: containrrr/watchtower
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
