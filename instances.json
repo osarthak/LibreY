@@ -50,14 +50,14 @@
       "librey": true
     },
     {
-      "clearnet": "https://librey.franklyflawless.org",
+      "clearnet": "https://librey.franklyflawless.org/",
       "tor": null,
       "i2p": null,
       "country": "IS",
       "librey": true
     },
     {
-      "clearnet": "https://glass.prpl.wtf",
+      "clearnet": "https://glass.prpl.wtf/",
       "tor": null,
       "i2p": null,
       "country": "GB",
