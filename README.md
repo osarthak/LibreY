@@ -34,6 +34,7 @@ Support the community. ❤️<br><br>
 [@codedipper](https://github.com/codedipper)'s instance:<br>
 [librex.revvy.de](https://librex.revvy.de/instances.php)<br>
 [Tor](http://librex.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/instances.php)<br>
+[I2P](http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/)<br>
 <br>
 [@davidovski](https://github.com/davidovski)'s instance:<br>
 [search.davidovski.xyz](https://search.davidovski.xyz/instances.php)<br>
