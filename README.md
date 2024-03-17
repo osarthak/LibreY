@@ -15,7 +15,7 @@
 
 ## Matrix
 
-If there's an important announcement, we do have a Matrix chatroom which you can join over at #librey:ahwx.org.
+If there's an important announcement, we do have a Matrix chatroom which you can join over at [#librey:ahwx.org](https://matrix.to/#/#librey:ahwx.org).
 
 ### Instances
 
