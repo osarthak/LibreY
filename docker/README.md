@@ -21,7 +21,6 @@ Dockerized LibreY is a simple way to host LibreY with a view to privacy. If you 
 ### Running a Docker container with Docker Compose
 
 ```yml
-version: "3"
 services:
   librey:
     image: ghcr.io/ahwxorg/librey:latest
