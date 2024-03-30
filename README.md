@@ -32,9 +32,9 @@ Support the community. ❤️<br><br>
 [Tor](http://r7nesn6dnp2fssinw7n5uj4ob2na6g4jppakpjgioxb6v4ca4bbsqoyd.onion/instances.php)<br>
 <br>
 [@codedipper](https://github.com/codedipper)'s instance:<br>
-[librex.revvy.de](https://librex.revvy.de/instances.php)<br>
-[Tor](http://librex.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/instances.php)<br>
-[I2P](http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/)<br>
+[search.revvy.de](https://search.revvy.de/instances.php)<br>
+[Tor](http://search.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/instances.php)<br>
+[I2P](http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/instances.php)<br>
 <br>
 [@davidovski](https://github.com/davidovski)'s instance:<br>
 [search.davidovski.xyz](https://search.davidovski.xyz/instances.php)<br>
