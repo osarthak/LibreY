@@ -115,7 +115,7 @@ This Docker image was developed with high configurability in mind, so here is th
 | APP_SCRIBE             | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
 | APP_GOTHUB             | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
 | APP_NITTER             | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
-| APP_LIBREREDDIT        | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
+| APP_REDLIB             | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
 | APP_PROXITOK           | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
 | APP_WIKILESS           | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
 | APP_QUETRE             | ""      | string                        | Integration with external self-hosted apps, configure the desired host. |
