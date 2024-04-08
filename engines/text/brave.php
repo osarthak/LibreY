@@ -38,7 +38,7 @@
 
                 $url = $url->textContent;
 
-                if (!empty($results) && array_key_exists("url", $results) && end($results)["url"] == $url->textContent)
+                if (!empty($results) && array_key_exists("url", end($results)) && end($results)["url"] == $url->textContent)
                     continue;
 
                 $title = $xpath->evaluate(".//a[contains(@class, 'h')]//div[contains(@class, 'url')]", $result)[0];
@@ -46,6 +46,8 @@
                 if ($title == null)
                     continue;
                 $title = $title->textContent;
+
+                $title = end(explode("›", $title));
 
                 $description = ($xpath->evaluate(".//div[contains(@class, 'snippet-content')]//div[contains(@class, 'snippet-description')]", $result)[0] ?? null) ?->textContent ?? '';
 
