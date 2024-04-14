@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> Please note that this heavily relies on [@codedipper](https://github.com/codedipper)'s [work and is basically a copy of his wiki](https://github.com/codedipper/LibreY-Tor).
+> Please note that this heavily relies on [@codedipper](https://github.com/codedipper)'s [work and is basically a copy of his wiki](https://github.com/codedipper/LibreY-Tor/wiki/LibreY-Tor-Proxy-%E2%80%90-Prebuilt-images-with-compose).
 
 
 Step 0: Install and configure Docker.
