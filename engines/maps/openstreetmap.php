@@ -23,7 +23,7 @@
                 array_push($results, array(
                     "title" => $item["name"],
                     "description" => $item["display_name"],
-                    "url" => "https://www.openstreetmap.org/node/" . $item["osm_id"],
+                    "url" => "https://www.openstreetmap.org/" . $item["osm_type"] . "/" . $item["osm_id"],
                     "base_url" => "www.openstreetmap.org"
                 ));
             }
